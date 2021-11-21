@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="pYE-hi-WMv" customClass="QuestionCell" customModule="ExamTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pYE-hi-WMv" id="qYh-rT-Wln">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question no. (Marked out of)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7if-Qd-N5G">
+                        <rect key="frame" x="8" y="12" width="584" height="40"/>
+                        <color key="backgroundColor" red="0.0" green="0.90196078431372551" blue="0.46274509803921571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="2gG-v8-jxV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vMf-M7-ryT">
+                        <rect key="frame" x="8" y="54" width="584" height="238"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSo-fr-oES">
+                                <rect key="frame" x="8" y="10" width="576" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gpI-sL-m88" customClass="AnswersStackView" customModule="ExamTask" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="39" width="584" height="199"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SSo-fr-oES" firstAttribute="top" secondItem="vMf-M7-ryT" secondAttribute="top" constant="10" id="8Of-Ej-MyQ"/>
+                            <constraint firstAttribute="trailing" secondItem="SSo-fr-oES" secondAttribute="trailing" id="CC4-5i-1Po"/>
+                            <constraint firstAttribute="bottom" secondItem="gpI-sL-m88" secondAttribute="bottom" id="ULp-Zh-B5Y"/>
+                            <constraint firstItem="gpI-sL-m88" firstAttribute="leading" secondItem="vMf-M7-ryT" secondAttribute="leading" id="WCh-QR-PVw"/>
+                            <constraint firstItem="SSo-fr-oES" firstAttribute="leading" secondItem="vMf-M7-ryT" secondAttribute="leading" constant="8" id="aTc-gL-RLR"/>
+                            <constraint firstAttribute="trailing" secondItem="gpI-sL-m88" secondAttribute="trailing" id="ezH-th-xAi"/>
+                            <constraint firstItem="gpI-sL-m88" firstAttribute="top" secondItem="SSo-fr-oES" secondAttribute="bottom" id="lrt-bn-zB4"/>
+                            <constraint firstItem="gpI-sL-m88" firstAttribute="width" secondItem="vMf-M7-ryT" secondAttribute="width" id="qEV-Vr-Xse"/>
+                            <constraint firstItem="gpI-sL-m88" firstAttribute="centerX" secondItem="vMf-M7-ryT" secondAttribute="centerX" id="siR-DG-PrH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="vMf-M7-ryT" secondAttribute="trailing" constant="8" id="8Me-m9-dmz"/>
+                    <constraint firstItem="vMf-M7-ryT" firstAttribute="leading" secondItem="qYh-rT-Wln" secondAttribute="leading" constant="8" id="GN1-gJ-qKY"/>
+                    <constraint firstItem="vMf-M7-ryT" firstAttribute="top" secondItem="7if-Qd-N5G" secondAttribute="bottom" constant="2" id="QFV-yJ-jI2"/>
+                    <constraint firstItem="7if-Qd-N5G" firstAttribute="trailing" secondItem="vMf-M7-ryT" secondAttribute="trailing" id="SxA-8i-XmD"/>
+                    <constraint firstAttribute="bottom" secondItem="vMf-M7-ryT" secondAttribute="bottom" constant="8" id="ic5-dj-K9U"/>
+                    <constraint firstItem="7if-Qd-N5G" firstAttribute="leading" secondItem="vMf-M7-ryT" secondAttribute="leading" id="jiF-U3-4BW"/>
+                    <constraint firstItem="7if-Qd-N5G" firstAttribute="top" secondItem="qYh-rT-Wln" secondAttribute="top" constant="12" id="phS-bQ-G6v"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="frU-J9-iOR"/>
+            <connections>
+                <outlet property="answersStackView" destination="gpI-sL-m88" id="BCZ-gv-pww"/>
+                <outlet property="questionDetailsLabel" destination="7if-Qd-N5G" id="vOJ-Ml-8ob"/>
+                <outlet property="questionLabel" destination="SSo-fr-oES" id="g3e-St-QkD"/>
+                <outlet property="view" destination="vMf-M7-ryT" id="8ln-Ht-l6B"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="119.86607142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

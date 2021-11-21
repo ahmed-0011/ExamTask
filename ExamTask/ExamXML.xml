@@ -1,0 +1,125 @@
+<Exam>
+    <settings examDuration = "1" numberOfQuestionsPerPage = "5" eachQuestionWeight = "5" />
+    <questions>
+        <question title = "how much is 12*4" id = "1" answerID = "4">
+            <answers>
+                <option id = "0" title = "34" />
+                <option id = "1" title = "40" />
+                <option id = "2" title = "36" />
+                <option id = "3" title = "46" />
+                <option id = "4" title = "48" />
+                <option id = "5" title = "38" />
+            </answers>
+        </question>
+        <question title = "how much is 6*9?" id = "2" answerID = "2">
+            <answers>
+                <option id = "0" title = "3" />
+                <option id = "2" title = "54" />
+            </answers>
+        </question>
+        <question title = "how much is 6*8" id = "3" answerID = "3">
+            <answers>
+                <option id = "0" title = "3" />
+                <option id = "1" title = "43" />
+                <option id = "2" title = "54" />
+                <option id = "3" title = "48" />
+            </answers>
+        </question>
+        <question title = "how much is 4*9?" id = "4" answerID = "0">
+            <answers>
+                <option id = "0" title = "36" />
+                <option id = "1" title = "43" />
+                <option id = "2" title = "54" />
+                <option id = "3" title = "45" />
+            </answers>
+        </question>
+        <question title = "how much is 6*10?" id = "5" answerID = "2">
+            <answers>
+                <option id = "0" title = "3" />
+                <option id = "1" title = "43" />
+                <option id = "2" title = "60" />
+                <option id = "3" title = "45" />
+            </answers>
+        </question>
+        <question title = "how much is 7*9" id = "6" answerID = "1">
+            <answers>
+                <option id = "0" title = "54" />
+                <option id = "1" title = "63" />
+                <option id = "2" title = "45" />
+                <option id = "3" title = "65" />
+            </answers>
+        </question>
+        <question title = "how much is 3*9?" id = "7" answerID = "2">
+            <answers>
+                <option id = "0" title = "3" />
+                <option id = "1" title = "43" />
+                <option id = "2" title = "27" />
+                <option id = "3" title = "45" />
+            </answers>
+        </question>
+        <question title = "how much is 4*7" id = "8" answerID = "3">
+            <answers>
+                <option id = "0" title = "3" />
+                <option id = "1" title = "43" />
+                <option id = "2" title = "54" />
+                <option id = "3" title = "28" />
+            </answers>
+        </question>
+        <question title = "how much is 2*9?" id = "9" answerID = "0">
+            <answers>
+                <option id = "0" title = "18" />
+                <option id = "1" title = "43" />
+                <option id = "2" title = "54" />
+                <option id = "3" title = "45" />
+            </answers>
+        </question>
+        <question title = "how much is 9*5?" id = "10" answerID = "3">
+            <answers>
+                <option id = "0" title = "3" />
+                <option id = "1" title = "43" />
+                <option id = "2" title = "60" />
+                <option id = "3" title = "45" />
+            </answers>
+        </question>
+        <question title = "how much is 5*7" id = "11" answerID = "1">
+            <answers>
+                <option id = "0" title = "30" />
+                <option id = "1" title = "35" />
+                <option id = "2" title = "25" />
+                <option id = "3" title = "39" />
+            </answers>
+        </question>
+        <question title = "how much is 6*9?" id = "12" answerID = "2">
+            <answers>
+                <option id = "0" title = "3" />
+                <option id = "1" title = "43" />
+                <option id = "2" title = "54" />
+                <option id = "3" title = "45" />
+            </answers>
+        </question>
+        <question title = "how much is 2*10?" id = "13" answerID = "3">
+            <answers>
+                <option id = "0" title = "3" />
+                <option id = "1" title = "43" />
+                <option id = "2" title = "60" />
+                <option id = "3" title = "20" />
+            </answers>
+        </question>
+        <question title = "how much is 4*9?" id = "14" answerID = "0">
+            <answers>
+                <option id = "0" title = "36" />
+                <option id = "1" title = "43" />
+                <option id = "2" title = "54" />
+                <option id = "3" title = "45" />
+            </answers>
+        </question>
+        <question title = "how much is 6*10?" id = "15" answerID = "2">
+            <answers>
+                <option id = "0" title = "3" />
+                <option id = "1" title = "43" />
+                <option id = "2" title = "60" />
+                <option id = "3" title = "45" />
+            </answers>
+        </question>
+    </questions>
+</Exam>
