@@ -16,15 +16,18 @@ class ExamParser: NSObject, XMLParserDelegate {
 
     private override init() {}
     
-    func parse() -> Exam {
-        let parser = XMLParser(contentsOf: examURL!)!
-        parser.delegate = self
-        let success = parser.parse()
-    
-        if success {
-            print("Done parsing exam.")
-        } else {
-            print("error \(String(describing: parser.parserError))")
+    func getExam() -> Exam {
+        
+        if let url = examURL {
+            let parser = XMLParser(contentsOf: url)
+            parser?.delegate = self
+            let success = parser?.parse() ?? false
+            
+            if success {
+                print("Done parsing exam.")
+            } else {
+                print("error \(String(describing: parser?.parserError))")
+            }
         }
         return exam
     }
@@ -40,7 +43,7 @@ class ExamParser: NSObject, XMLParserDelegate {
             currentQuestion = Question()
             currentQuestion?.id = Int(attributeDict["id"] ?? "-1")
             currentQuestion?.title = attributeDict["title"]
-            currentQuestion?.answerID = Int(attributeDict["answerID"] ?? "0")
+            currentQuestion?.answerID = Int(attributeDict["answerID"] ?? "-1")
             currentQuestion?.weight = exam.eachQuestionWeight
         }
         
@@ -54,7 +57,9 @@ class ExamParser: NSObject, XMLParserDelegate {
     
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         if elementName == "question" {
-            exam.questions.append(currentQuestion!)
+            if let currentQuestion = currentQuestion {
+                exam.questions.append(currentQuestion)
+            }
         }
     }
 }

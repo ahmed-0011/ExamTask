@@ -25,7 +25,7 @@
 		E263153E27416A2200E40D08 /* ExamParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E263153D27416A2200E40D08 /* ExamParser.swift */; };
 		E26315402741B1B800E40D08 /* ExamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E263153F2741B1B800E40D08 /* ExamViewModel.swift */; };
 		E26315422741B1CC00E40D08 /* QuestionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26315412741B1CC00E40D08 /* QuestionCellViewModel.swift */; };
-		E2B80CF82749B20F00AF4C5B /* RadioButtonSuperview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B80CF72749B20E00AF4C5B /* RadioButtonSuperview.swift */; };
+		E2AAEBA3274D2335004A3B6F /* PageNumbersStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AAEBA2274D2335004A3B6F /* PageNumbersStackView.swift */; };
 		E2C17A17274452430067331F /* ExamResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C17A16274452430067331F /* ExamResultView.swift */; };
 		E2C17A1A274460C10067331F /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C17A19274460C10067331F /* UIView.swift */; };
 		E2D565A227450977001DD057 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D565A127450977001DD057 /* Constants.swift */; };
@@ -53,7 +53,7 @@
 		E263153D27416A2200E40D08 /* ExamParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamParser.swift; sourceTree = "<group>"; };
 		E263153F2741B1B800E40D08 /* ExamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamViewModel.swift; sourceTree = "<group>"; };
 		E26315412741B1CC00E40D08 /* QuestionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCellViewModel.swift; sourceTree = "<group>"; };
-		E2B80CF72749B20E00AF4C5B /* RadioButtonSuperview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButtonSuperview.swift; sourceTree = "<group>"; };
+		E2AAEBA2274D2335004A3B6F /* PageNumbersStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageNumbersStackView.swift; sourceTree = "<group>"; };
 		E2C17A16274452430067331F /* ExamResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamResultView.swift; sourceTree = "<group>"; };
 		E2C17A19274460C10067331F /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		E2D565A127450977001DD057 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -141,9 +141,9 @@
 				E24ECEC527414587001187DE /* QuestionCell.xib */,
 				E22232722742B95A001556D8 /* RadioButtonView.swift */,
 				E22232702742B662001556D8 /* RadioButtonView.xib */,
-				E2B80CF72749B20E00AF4C5B /* RadioButtonSuperview.swift */,
 				E2EC8E682748078800C8CB59 /* ExamHeaderView.swift */,
 				E24CE7D827431A69004AD928 /* AnswersStackView.swift */,
+				E2AAEBA2274D2335004A3B6F /* PageNumbersStackView.swift */,
 				E2C17A16274452430067331F /* ExamResultView.swift */,
 			);
 			path = View;
@@ -244,6 +244,7 @@
 				E24ECEAE27413E54001187DE /* ExamViewController.swift in Sources */,
 				E24ECEC627414587001187DE /* QuestionCell.swift in Sources */,
 				E263153E27416A2200E40D08 /* ExamParser.swift in Sources */,
+				E2AAEBA3274D2335004A3B6F /* PageNumbersStackView.swift in Sources */,
 				E24ECEC9274145BA001187DE /* Exam.swift in Sources */,
 				E22232732742B95A001556D8 /* RadioButtonView.swift in Sources */,
 				E2D565A227450977001DD057 /* Constants.swift in Sources */,
@@ -251,7 +252,6 @@
 				E24ECEAA27413E54001187DE /* AppDelegate.swift in Sources */,
 				E26315422741B1CC00E40D08 /* QuestionCellViewModel.swift in Sources */,
 				E26315402741B1B800E40D08 /* ExamViewModel.swift in Sources */,
-				E2B80CF82749B20F00AF4C5B /* RadioButtonSuperview.swift in Sources */,
 				E24ECEAC27413E54001187DE /* SceneDelegate.swift in Sources */,
 				E2C17A1A274460C10067331F /* UIView.swift in Sources */,
 				E2C17A17274452430067331F /* ExamResultView.swift in Sources */,

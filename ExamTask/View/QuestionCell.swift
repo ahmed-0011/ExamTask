@@ -54,17 +54,23 @@ class QuestionCell: UITableViewCell {
         viewInit()
         questionDetailsLabel.text = questionCellViewModel?.detailsTitle
         questionLabel.text = questionCellViewModel?.title
-        answersStackView.addRadioButtons(owner: self, answers: questionCellViewModel?.answers ?? [], selectedAnswer: questionCellViewModel?.selectedAnswer ?? -1)
+        answersStackView.addRadioButtons(delegate: self, answers: questionCellViewModel?.answers ?? [], selectedAnswer: questionCellViewModel?.selectedAnswer ?? -1)
     }
+}
+
+
+// MARK: - Radio Button View Delegate
+extension QuestionCell: RadioButtonViewDelegate {
     
-    @objc @IBAction func didRadioButtonTapped(_ sender: UIButton) {
-        sender.setImage(UIImage(systemName: "largecircle.fill.circle"), for: .normal)
+    func setupRadioButtons(selectedRadioButton: UIButton) {
+        
+        selectedRadioButton.setImage(UIImage(systemName: "largecircle.fill.circle"), for: .normal)
         for radioButtonView in radioButtonViews {
-            if radioButtonView.radioButton.tag != sender.tag {
+            if radioButtonView.radioButton.tag != selectedRadioButton.tag {
                 radioButtonView.radioButton.setImage(UIImage(systemName: "circle"), for: .normal)
             }
         }
-        questionCellViewModel?.selectedAnswer = sender.tag
+        questionCellViewModel?.selectedAnswer = selectedRadioButton.tag
         questionCellViewModel?.updateMark()
     }
 }

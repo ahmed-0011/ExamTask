@@ -12,7 +12,8 @@ class ExamViewController: UIViewController {
     @IBOutlet var examView: ExamView!
     @IBOutlet var examResultView: ExamResultView!
     @IBOutlet var examGradeLabel: UILabel!
-    let exam = ExamParser.shared.parse()
+    @IBOutlet var examFinishedAt: UILabel!
+    let exam = ExamParser.shared.getExam()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,11 +27,23 @@ class ExamViewController: UIViewController {
         examResultView.removeFromSuperview()
     }
 }
-
+    
+    
+// MARK: - Exam View Delegate
 extension ExamViewController: ExamViewDelegate {
    
-    func showExamResultView(finalGradeString: String) {
+    func showExamResultView(finalGradeString: String, finishTimeString: String) {
         examGradeLabel.text = finalGradeString
+        examFinishedAt.text = finishTimeString
         examView.addSubView(examResultView, constrainedTo: examView)
+    }
+    
+    func showExamDurationEndedDialog() {
+        let examDurationEndedAlert = UIAlertController(title: "Exam duration ended.", message: "exam duration has ended.", preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "Ok", style: .default) { _ in
+            self.examView.showExamResultView()
+        }
+        examDurationEndedAlert.addAction(okButton)
+        present(examDurationEndedAlert, animated: true)
     }
 }

@@ -84,7 +84,6 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="y8v-Ub-onw" firstAttribute="width" secondItem="odI-vK-eIG" secondAttribute="width" multiplier="0.22" id="5q0-hg-qEO"/>
-                                        <constraint firstItem="y8v-Ub-onw" firstAttribute="height" secondItem="odI-vK-eIG" secondAttribute="height" id="IYq-yF-uXX"/>
                                         <constraint firstItem="b5V-rc-a8y" firstAttribute="width" secondItem="odI-vK-eIG" secondAttribute="width" multiplier="0.5" id="eSP-qm-EXM"/>
                                         <constraint firstItem="VRP-XN-ccE" firstAttribute="width" secondItem="odI-vK-eIG" secondAttribute="width" multiplier="0.22" id="itV-kz-D9c"/>
                                         <constraint firstItem="jOp-7c-rOL" firstAttribute="width" secondItem="odI-vK-eIG" secondAttribute="width" multiplier="0.22" id="kMp-TK-EmJ"/>

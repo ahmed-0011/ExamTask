@@ -20,14 +20,16 @@ class AnswersStackView: UIStackView {
         addRadioButtons(answers: testAnswers, selectedAnswer: -1)
     }
     
-    func addRadioButtons(owner: Any? = nil, answers: [Answer], selectedAnswer: Int) {
+    func addRadioButtons(delegate: RadioButtonViewDelegate? = nil, answers: [Answer], selectedAnswer: Int) {
         
         let nib = UINib(nibName: "\(RadioButtonView.self)", bundle: Bundle(for: RadioButtonView.self))
+        
         for answer in answers {
-            let radioButtonView = nib.instantiate(withOwner: owner).first as! RadioButtonView
+            let radioButtonView = nib.instantiate(withOwner: nil).first as! RadioButtonView
+            radioButtonView.delegate = delegate
             radioButtonView.radioButtonLabel.text = answer.title ?? ""
             radioButtonView.radioButton.tag = answer.id ?? -1
-            if radioButtonView.radioButton.tag == selectedAnswer {
+            if radioButtonView.radioButton.tag == selectedAnswer && selectedAnswer != -1 {
                 radioButtonView.radioButton.setImage(UIImage(systemName: "largecircle.fill.circle"), for: .normal)
             }
             addArrangedSubview(radioButtonView)
