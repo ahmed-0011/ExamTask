@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import WidgetKit
 
 class ExamViewController: UIViewController {
 
@@ -32,10 +33,14 @@ class ExamViewController: UIViewController {
 // MARK: - Exam View Delegate
 extension ExamViewController: ExamViewDelegate {
    
-    func showExamResultView(finalGradeString: String, finishTimeString: String) {
+    func showExamResultView(finalGradeString: String, finishTimeString: String, numberOfQuestions: String) {
         examGradeLabel.text = finalGradeString
         examFinishedAt.text = finishTimeString
         examView.addSubView(examResultView, constrainedTo: examView)
+     
+        let examResult = ExamResult(finalGrade: finalGradeString, numberOfQuestions: numberOfQuestions, submitTime: Date().formatted())
+        DataManager.shared.saveExamResult(examResult: examResult)
+        WidgetCenter.shared.reloadTimelines(ofKind: "ExamTaskWidget")
     }
     
     func showExamDurationEndedDialog() {

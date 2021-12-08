@@ -8,7 +8,7 @@
 import UIKit
 
 protocol ExamViewDelegate {
-    func showExamResultView(finalGradeString: String, finishTimeString: String)
+    func showExamResultView(finalGradeString: String, finishTimeString: String, numberOfQuestions: String)
     func showExamDurationEndedDialog()
 }
 
@@ -193,7 +193,11 @@ class ExamView: UIView {
     }
     
     func showExamResultView() {
-        delegate?.showExamResultView(finalGradeString: examViewModel?.finalGradeString ?? "No grade.", finishTimeString: examViewModel?.finishTimeString ?? "No finish time.")
+        delegate?.showExamResultView(
+            finalGradeString: examViewModel?.finalGradeString ?? "No grade.",
+            finishTimeString: examViewModel?.finishTimeString ?? "No finish time.",
+            numberOfQuestions: "\(examViewModel?.questionCellViewModels.count ?? 0)"
+        )
     }
 
     func tryAgain() {

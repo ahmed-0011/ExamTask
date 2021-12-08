@@ -21,20 +21,55 @@
 		E24ECEC627414587001187DE /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24ECEC427414587001187DE /* QuestionCell.swift */; };
 		E24ECEC727414587001187DE /* QuestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24ECEC527414587001187DE /* QuestionCell.xib */; };
 		E24ECEC9274145BA001187DE /* Exam.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24ECEC8274145BA001187DE /* Exam.swift */; };
+		E25866A8275F6DB900BBDB23 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25866A7275F6DB900BBDB23 /* DataManager.swift */; };
+		E25866AA275F7F4100BBDB23 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D565A127450977001DD057 /* Constants.swift */; };
 		E2631536274148B900E40D08 /* ExamXML.xml in Resources */ = {isa = PBXBuildFile; fileRef = E2631535274148B900E40D08 /* ExamXML.xml */; };
 		E263153E27416A2200E40D08 /* ExamParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E263153D27416A2200E40D08 /* ExamParser.swift */; };
 		E26315402741B1B800E40D08 /* ExamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E263153F2741B1B800E40D08 /* ExamViewModel.swift */; };
 		E26315422741B1CC00E40D08 /* QuestionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26315412741B1CC00E40D08 /* QuestionCellViewModel.swift */; };
 		E2AAEBA3274D2335004A3B6F /* PageNumbersStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AAEBA2274D2335004A3B6F /* PageNumbersStackView.swift */; };
+		E2B4B1E3275E7D260055EC34 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B4B1E2275E7D260055EC34 /* WidgetKit.framework */; };
+		E2B4B1E5275E7D260055EC34 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B4B1E4275E7D260055EC34 /* SwiftUI.framework */; };
+		E2B4B1E8275E7D260055EC34 /* ExamTaskWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B4B1E7275E7D260055EC34 /* ExamTaskWidget.swift */; };
+		E2B4B1EA275E7D280055EC34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2B4B1E9275E7D280055EC34 /* Assets.xcassets */; };
+		E2B4B1EE275E7D280055EC34 /* ExamTaskWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E2B4B1E0275E7D260055EC34 /* ExamTaskWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E2B4B1F4275E80860055EC34 /* ExamResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B4B1F3275E80860055EC34 /* ExamResult.swift */; };
+		E2B4B1F5275E82270055EC34 /* ExamResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B4B1F3275E80860055EC34 /* ExamResult.swift */; };
 		E2C17A17274452430067331F /* ExamResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C17A16274452430067331F /* ExamResultView.swift */; };
 		E2C17A1A274460C10067331F /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C17A19274460C10067331F /* UIView.swift */; };
 		E2D565A227450977001DD057 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D565A127450977001DD057 /* Constants.swift */; };
 		E2EC8E692748078800C8CB59 /* ExamHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EC8E682748078800C8CB59 /* ExamHeaderView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E2B4B1EC275E7D280055EC34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E24ECE9E27413E53001187DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2B4B1DF275E7D260055EC34;
+			remoteInfo = ExamTaskWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E2B4B1EF275E7D280055EC34 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E2B4B1EE275E7D280055EC34 /* ExamTaskWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		E22232702742B662001556D8 /* RadioButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RadioButtonView.xib; sourceTree = "<group>"; };
 		E22232722742B95A001556D8 /* RadioButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonView.swift; sourceTree = "<group>"; };
+		E247B3EC275FA916000AB6B7 /* ExamTask.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExamTask.entitlements; sourceTree = "<group>"; };
+		E247B3ED275FA997000AB6B7 /* ExamTaskWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExamTaskWidgetExtension.entitlements; sourceTree = "<group>"; };
 		E24CE7D827431A69004AD928 /* AnswersStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersStackView.swift; sourceTree = "<group>"; };
 		E24ECEA627413E54001187DE /* ExamTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExamTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E24ECEA927413E54001187DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,11 +84,19 @@
 		E24ECEC427414587001187DE /* QuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCell.swift; sourceTree = "<group>"; };
 		E24ECEC527414587001187DE /* QuestionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionCell.xib; sourceTree = "<group>"; };
 		E24ECEC8274145BA001187DE /* Exam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exam.swift; sourceTree = "<group>"; };
+		E25866A7275F6DB900BBDB23 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		E2631535274148B900E40D08 /* ExamXML.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ExamXML.xml; sourceTree = "<group>"; };
 		E263153D27416A2200E40D08 /* ExamParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamParser.swift; sourceTree = "<group>"; };
 		E263153F2741B1B800E40D08 /* ExamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamViewModel.swift; sourceTree = "<group>"; };
 		E26315412741B1CC00E40D08 /* QuestionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCellViewModel.swift; sourceTree = "<group>"; };
 		E2AAEBA2274D2335004A3B6F /* PageNumbersStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageNumbersStackView.swift; sourceTree = "<group>"; };
+		E2B4B1E0275E7D260055EC34 /* ExamTaskWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ExamTaskWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2B4B1E2275E7D260055EC34 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		E2B4B1E4275E7D260055EC34 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E2B4B1E7275E7D260055EC34 /* ExamTaskWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamTaskWidget.swift; sourceTree = "<group>"; };
+		E2B4B1E9275E7D280055EC34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2B4B1EB275E7D280055EC34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2B4B1F3275E80860055EC34 /* ExamResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamResult.swift; sourceTree = "<group>"; };
 		E2C17A16274452430067331F /* ExamResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamResultView.swift; sourceTree = "<group>"; };
 		E2C17A19274460C10067331F /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		E2D565A127450977001DD057 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -65,6 +108,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2B4B1DD275E7D260055EC34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2B4B1E5275E7D260055EC34 /* SwiftUI.framework in Frameworks */,
+				E2B4B1E3275E7D260055EC34 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +142,10 @@
 		E24ECE9D27413E53001187DE = {
 			isa = PBXGroup;
 			children = (
+				E247B3ED275FA997000AB6B7 /* ExamTaskWidgetExtension.entitlements */,
 				E24ECEA827413E54001187DE /* ExamTask */,
+				E2B4B1E6275E7D260055EC34 /* ExamTaskWidget */,
+				E2B4B1E1275E7D260055EC34 /* Frameworks */,
 				E24ECEA727413E54001187DE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				E24ECEA627413E54001187DE /* ExamTask.app */,
+				E2B4B1E0275E7D260055EC34 /* ExamTaskWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,10 +162,12 @@
 		E24ECEA827413E54001187DE /* ExamTask */ = {
 			isa = PBXGroup;
 			children = (
+				E247B3EC275FA916000AB6B7 /* ExamTask.entitlements */,
 				E2631535274148B900E40D08 /* ExamXML.xml */,
 				E2D565A127450977001DD057 /* Constants.swift */,
 				E2C17A18274460850067331F /* Extension */,
 				E236571D2743F3D1003EC57E /* Parser */,
+				E25866A6275F6D9200BBDB23 /* Manager */,
 				E24ECEBD274142D4001187DE /* Model */,
 				E24ECEBE274142EE001187DE /* View */,
 				E24ECEBF274142F8001187DE /* ViewModel */,
@@ -128,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				E24ECEC8274145BA001187DE /* Exam.swift */,
+				E2B4B1F3275E80860055EC34 /* ExamResult.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -158,6 +217,33 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		E25866A6275F6D9200BBDB23 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E25866A7275F6DB900BBDB23 /* DataManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		E2B4B1E1275E7D260055EC34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2B4B1E2275E7D260055EC34 /* WidgetKit.framework */,
+				E2B4B1E4275E7D260055EC34 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2B4B1E6275E7D260055EC34 /* ExamTaskWidget */ = {
+			isa = PBXGroup;
+			children = (
+				E2B4B1E7275E7D260055EC34 /* ExamTaskWidget.swift */,
+				E2B4B1E9275E7D280055EC34 /* Assets.xcassets */,
+				E2B4B1EB275E7D280055EC34 /* Info.plist */,
+			);
+			path = ExamTaskWidget;
+			sourceTree = "<group>";
+		};
 		E2C17A18274460850067331F /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,15 +262,34 @@
 				E24ECEA227413E53001187DE /* Sources */,
 				E24ECEA327413E53001187DE /* Frameworks */,
 				E24ECEA427413E53001187DE /* Resources */,
+				E2B4B1EF275E7D280055EC34 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E2B4B1ED275E7D280055EC34 /* PBXTargetDependency */,
 			);
 			name = ExamTask;
 			productName = ExamTask;
 			productReference = E24ECEA627413E54001187DE /* ExamTask.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E2B4B1DF275E7D260055EC34 /* ExamTaskWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2B4B1F2275E7D280055EC34 /* Build configuration list for PBXNativeTarget "ExamTaskWidgetExtension" */;
+			buildPhases = (
+				E2B4B1DC275E7D260055EC34 /* Sources */,
+				E2B4B1DD275E7D260055EC34 /* Frameworks */,
+				E2B4B1DE275E7D260055EC34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExamTaskWidgetExtension;
+			productName = ExamTaskWidgetExtension;
+			productReference = E2B4B1E0275E7D260055EC34 /* ExamTaskWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -197,6 +302,9 @@
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					E24ECEA527413E53001187DE = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					E2B4B1DF275E7D260055EC34 = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
@@ -215,6 +323,7 @@
 			projectRoot = "";
 			targets = (
 				E24ECEA527413E53001187DE /* ExamTask */,
+				E2B4B1DF275E7D260055EC34 /* ExamTaskWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -234,6 +343,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E2B4B1DE275E7D260055EC34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2B4B1EA275E7D280055EC34 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -248,19 +365,39 @@
 				E24ECEC9274145BA001187DE /* Exam.swift in Sources */,
 				E22232732742B95A001556D8 /* RadioButtonView.swift in Sources */,
 				E2D565A227450977001DD057 /* Constants.swift in Sources */,
+				E25866A8275F6DB900BBDB23 /* DataManager.swift in Sources */,
 				E24CE7D927431A69004AD928 /* AnswersStackView.swift in Sources */,
 				E24ECEAA27413E54001187DE /* AppDelegate.swift in Sources */,
 				E26315422741B1CC00E40D08 /* QuestionCellViewModel.swift in Sources */,
 				E26315402741B1B800E40D08 /* ExamViewModel.swift in Sources */,
 				E24ECEAC27413E54001187DE /* SceneDelegate.swift in Sources */,
 				E2C17A1A274460C10067331F /* UIView.swift in Sources */,
+				E2B4B1F4275E80860055EC34 /* ExamResult.swift in Sources */,
 				E2C17A17274452430067331F /* ExamResultView.swift in Sources */,
 				E24ECEC3274143A6001187DE /* ExamView.swift in Sources */,
 				E2EC8E692748078800C8CB59 /* ExamHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E2B4B1DC275E7D260055EC34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2B4B1E8275E7D260055EC34 /* ExamTaskWidget.swift in Sources */,
+				E2B4B1F5275E82270055EC34 /* ExamResult.swift in Sources */,
+				E25866AA275F7F4100BBDB23 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2B4B1ED275E7D280055EC34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2B4B1DF275E7D260055EC34 /* ExamTaskWidgetExtension */;
+			targetProxy = E2B4B1EC275E7D280055EC34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E24ECEAF27413E54001187DE /* Main.storyboard */ = {
@@ -401,8 +538,10 @@
 		E24ECEBB27413E56001187DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ExamTask/ExamTask.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5TNHTGHUGH;
@@ -429,8 +568,10 @@
 		E24ECEBC27413E56001187DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ExamTask/ExamTask.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5TNHTGHUGH;
@@ -454,6 +595,62 @@
 			};
 			name = Release;
 		};
+		E2B4B1F0275E7D280055EC34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = ExamTaskWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5TNHTGHUGH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ExamTaskWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ExamTaskWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = myapp.aaa.ExamTask.ExamTaskWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E2B4B1F1275E7D280055EC34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = ExamTaskWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5TNHTGHUGH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ExamTaskWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ExamTaskWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = myapp.aaa.ExamTask.ExamTaskWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -471,6 +668,15 @@
 			buildConfigurations = (
 				E24ECEBB27413E56001187DE /* Debug */,
 				E24ECEBC27413E56001187DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2B4B1F2275E7D280055EC34 /* Build configuration list for PBXNativeTarget "ExamTaskWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2B4B1F0275E7D280055EC34 /* Debug */,
+				E2B4B1F1275E7D280055EC34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
